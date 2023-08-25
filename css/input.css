@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-heading {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.hero-cta {
+  border: 2px solid;
+  background: #f1a501;
+}
+.hero-cta:hover {
+  background: #f8a900;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.plane {
+  animation: infinite;
+}
+
+.card {
+  text-align: center;
+  width: 12rem;
+}
+
+.card-body {
+  width: 12rem;
+}
