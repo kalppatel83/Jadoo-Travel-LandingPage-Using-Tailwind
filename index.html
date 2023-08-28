@@ -97,8 +97,14 @@
         </div>
         <div class="relative hidden md:block">
           <div>
-            <img src="./images/plane.svg" class="absolute -top-16 left-20" />
-            <img src="./images/plane.svg" class="absolute top-24 -right-16" />
+            <img
+              src="./images/plane.svg"
+              class="absolute -top-16 left-20 animate-pulse"
+            />
+            <img
+              src="./images/plane.svg"
+              class="absolute top-24 -right-16 animate-pulse"
+            />
             <img src="./images/traveller 1.svg" class="hero-img" alt="" />
           </div>
         </div>
@@ -109,69 +115,372 @@
     <!------------------------------- Top Destinations Starts Here  --------------------------------------->
 
     <section class="my-10 max-w-7xl mx-auto">
-      <div class=" flex items-center justify-center text-center">
-        <span class="text-secondary text-2xl md:text-2xl">Top Selling</spa>
+      <div class="flex flex-col items-center justify-center text-center">
+        <span class="text-secondary text-2xl md:text-2xl block"
+          >Top Selling</span
+        >
         <h1 class="text-primary text-5xl md:text-6xl">Top Destinations</h1>
       </div>
 
-      <div class="flex flex-wrap gap-14  md:flex-row md:space-y-0 items-center my-10 justify-center">
-       
+      <div
+        class="flex flex-wrap gap-14 md:flex-row md:space-y-0 items-center my-10 justify-center relative"
+      >
         <!-- Card -1  -->
-        <div class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105">
+        <div
+          class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105"
+        >
           <!-- Card-img -->
-           <div>
-             <img src="./images/rome.svg" class="w-72" alt="">
-           </div>
-           <!-- Card-content -->
-           <div class="py-5">
-             <div class="flex mx-4 justify-between items-center text-secondary text-lg">
-               <span >Rome, Italy</span>
-               <span>$5,42k</span>
-             </div>
-             <div class="flex mx-4 mt-4 text-md">
-               <img src="./images/navigation.svg" alt="">
-               <span class="ml-2  text-secondary">10 Days Trip</span>
-             </div>
-           </div>
-         </div>
-         <!-- Card -2  -->
-        <div class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105">
+          <div>
+            <img src="./images/rome.svg" class="w-72" alt="" />
+          </div>
+          <!-- Card-content -->
+          <div class="py-5">
+            <div
+              class="flex mx-4 justify-between items-center text-secondary text-lg"
+            >
+              <span>Rome, Italy</span>
+              <span>$5,42k</span>
+            </div>
+            <div class="flex mx-4 mt-4 text-md">
+              <img src="./images/navigation.svg" alt="" />
+              <span class="ml-2 text-secondary">10 Days Trip</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card -2  -->
+        <div
+          class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105"
+        >
           <!-- Card-img -->
-           <div>
-             <img src="./images/london_clock_tower.svg" class="w-72" alt="">
-           </div>
-           <!-- Card-content -->
-           <div class="py-5">
-             <div class="flex mx-4 justify-between items-center text-secondary text-lg">
-               <span >London, UK</span>
-               <span>$4.2k</span>
-             </div>
-             <div class="flex mx-4 mt-4 text-md">
-               <img src="./images/navigation.svg" alt="">
-               <span class="ml-2 text-secondary">12 Days Trip</span>
-             </div>
-           </div>
-         </div>
-          <!-- Card -3  -->
-        <div class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105">
+          <div>
+            <img src="./images/london_clock_tower.svg" class="w-72" alt="" />
+          </div>
+          <!-- Card-content -->
+          <div class="py-5">
+            <div
+              class="flex mx-4 justify-between items-center text-secondary text-lg"
+            >
+              <span>London, UK</span>
+              <span>$4.2k</span>
+            </div>
+            <div class="flex mx-4 mt-4 text-md">
+              <img src="./images/navigation.svg" alt="" />
+              <span class="ml-2 text-secondary">12 Days Trip</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card -3  -->
+        <div
+          class="bg-white shadow-xl rounded-3xl cursor-pointer hover:scale-105"
+        >
           <!-- Card-img -->
-           <div>
-             <img src="./images/europe.svg" class="w-72" alt="">
-           </div>
-           <!-- Card-content -->
-           <div class="py-5">
-             <div class="flex mx-4 justify-between items-center text-secondary text-lg">
-               <span >Full Europe</span>
-               <span>$15k</span>
-             </div>
-             <div class="flex mx-4 mt-4 text-md">
-               <img src="./images/navigation.svg" alt="">
-               <span class="ml-2 text-secondary">28 Days Trip</span>
-             </div>
-           </div>
-         </div>
+          <div>
+            <img src="./images/europe.svg" class="w-72" alt="" />
+          </div>
+          <!-- Card-content -->
+          <div class="py-5">
+            <div
+              class="flex mx-4 justify-between items-center text-secondary text-lg"
+            >
+              <span>Full Europe</span>
+              <span>$15k</span>
+            </div>
+            <div class="flex mx-4 mt-4 text-md">
+              <img src="./images/navigation.svg" alt="" />
+              <span class="ml-2 text-secondary">28 Days Trip</span>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./images/spring.svg"
+          class="hidden lg:block absolute right-24 bottom-6 -z-10"
+          alt=""
+        />
       </div>
     </section>
     <!------------------------------- Top Destinations Ends Here  --------------------------------------->
+
+    <!-- Book Your next Trip -->
+    <section
+      class="flex flex-col max-w-7xl justify-center items-center md:justify-around md:flex-row mx-8 lg:mx-auto my-16"
+    >
+      <div class="flex flex-col gap-7">
+        <div class="text-center mx-4 md:text-left">
+          <span class="text-2xl text-secondary">Easy and Fast</span>
+          <h1
+            class="text-4xl font-bold md:text-6xl max-w-sm capitalize text-primary mt-4"
+          >
+            Book your next trip in 3 easy steps
+          </h1>
+        </div>
+        <div class="flex flex-col gap-6 mt-3 mx-4">
+          <!-- Card 1 -->
+          <div class="flex items-center justify-start gap-5">
+            <div class="cursor-pointer">
+              <img src="./images/yellow-box.svg" alt="" />
+            </div>
+            <div>
+              <h3 class="text-secondary font-bold text-lg">
+                Choose Destination
+              </h3>
+              <p class="text-primary max-w-xs text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex gap-5 items-center">
+            <div class="cursor-pointer">
+              <img src="./images/orange-box.svg" alt="" />
+            </div>
+            <div>
+              <h3 class="text-secondary font-bold text-lg">Make Payment</h3>
+              <p class="text-primary max-w-xs text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="flex gap-5 items-center">
+            <div class="cursor-pointer">
+              <img src="./images/taxi.svg" alt="" />
+            </div>
+            <div>
+              <h3 class="text-secondary font-bold text-lg">
+                Reach Airport on Selected Date
+              </h3>
+              <p class="text-primary max-w-xs text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right - Part -->
+      <div class="relative mr-11 lg:mr-0 my-16 lg:my-0 cursor-pointer">
+        <div
+          class="bg-lightBlue w-80 h-72 blur-3xl -right-10 -top-5 rounded-full absolute -z-20"
+        ></div>
+        <div class="bg-white py-10 px-8 rounded-3xl">
+          <div>
+            <img src="./images/happy-women.svg" alt="" />
+          </div>
+          <div class="mt-3">
+            <span class="text-customBlack text-lg font-semibold"
+              >Trip to Greece</span
+            >
+            <div class="text-secondary">
+              <span>14 - 29 June</span>
+              <span>|</span>
+              <span>by Robbin joseph</span>
+            </div>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <div
+              class="bg-offWhite rounded-full w-9 h-9 flex items-center justify-center"
+            >
+              <img src="./images/leaf.svg" alt="" />
+            </div>
+            <div
+              class="bg-offWhite rounded-full w-9 h-9 flex items-center justify-center"
+            >
+              <img src="./images/Group-2.svg" alt="" />
+            </div>
+            <div
+              class="bg-offWhite rounded-full w-9 h-9 flex items-center justify-center"
+            >
+              <img src="./images/navigation.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-between mt-10 ml-1">
+            <div class="flex">
+              <img src="./images/building 1.svg" alt="" />
+              <span class="ml-2 text-secondary font-bold text-sm"
+                >24 People Going</span
+              >
+            </div>
+            <img src="./images/heart.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-xl py-6 px-6 rounded-3xl flex gap-6 absolute -right-16 bottom-16"
+        >
+          <div>
+            <img src="./images/tomb.svg" alt="" />
+          </div>
+          <div class="flex flex-col">
+            <span class="text-secondary">Ongoing</span>
+            <div>
+              <h1 class="text-customBlack text-lg">Trip to rome</h1>
+              <h3><span class="text-purple">40%</span> Completed</h3>
+              <div class="w-36 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div
+                  class="bg-purple h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Companies -->
+    <div class="max-w-7xl mx-auto my-10">
+      <div class="flex justify-between cursor-pointer">
+        <img src="./images/axon.svg" alt="" />
+        <img src="./images/jetstar.svg" alt="" />
+        <img src="./images/expidia.svg" alt="" />
+        <img src="./images/Quntas.svg" class="hidden md:block" alt="" />
+        <img src="./images/Alitiliya.svg" class="hidden md:block" alt="" />
+      </div>
+    </div>
+    <!-- Subscribe to newsletter -->
+    <section class="max-w-7xl mx-auto flex justify-center my-8 relative">
+      <div
+        class="relative flex flex-col items-center max-w-5xl bg-pinkish p-20 newletter_bordertop rounded-3xl justify-center"
+      >
+        <div>
+          <h1
+            class="text-2xl md:text-4xl md:leading-12 text-center max-w-9xl md:max-w-6xl font-semibold"
+          >
+            Subscribe to get information, latest news and other interesting
+            offers about Cobham
+          </h1>
+        </div>
+        <div class="flex justify-center z-50 mt-10 md:mt-12">
+          <div class="flex gap-2">
+            <input
+              type="text"
+              placeholder="Your Email"
+              class="py-3 px-7 rounded-xl input-logo"
+            />
+
+            <button class="bg-lightOrange py-3 px-7 rounded-xl">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <img
+          src="./images/shape-1.svg"
+          class="hidden md:block absolute bottom-0 -left-24"
+        />
+        <img
+          src="./images/shape-2.svg"
+          class="hidden md:block absolute right-0 top-0 z-40"
+        />
+      </div>
+      <div
+        class="absolute right-0 -top-[41px] lg:right-24 lg:-top-[41px] w-16 h-16 bg-[#747DEF] rounded-full flex items-center justify-center"
+      >
+        <img src="./images/navigation-2.svg" class="w-10" alt="" />
+      </div>
+      <img
+        src="./images/shape-3.svg"
+        class="hidden md:block absolute md:-bottom-10 -right-8 lg:-bottom-10 lg:right-6 -z-10 md:w-32 lg:w-52"
+        alt=""
+      />
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="max-w-7xl mx-auto my-14">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-9">
+        <!-- Part -1 -->
+        <div
+          class="flex flex-col gap-7 items-center justify-center md:items-start"
+        >
+          <img src="./images/logo-2.svg" alt="" />
+          <p
+            class="text-lg text-secondary max-w-xs block text-center md:text-left"
+          >
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+
+        <!-- Part - 2 -->
+        <div
+          class="flex flex-col md:flex-row gap-7 items-center justify-center"
+        >
+          <div class="flex flex-col gap-4">
+            <h1 class="text-primary text-4xl">Company</h1>
+            <ul
+              class="flex flex-col gap-3 items-center text-secondary text-xl md:text-lg md:items-start"
+            >
+              <li class="cursor-pointer">Career</li>
+              <li class="cursor-pointer">About</li>
+              <li class="cursor-pointer">Mobile</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h1 class="text-primary text-4xl">Contact</h1>
+            <ul
+              class="flex flex-col gap-3 items-center text-secondary text-xl md:text-lg md:items-start"
+            >
+              <li class="cursor-pointer">Help/FAQ</li>
+              <li class="cursor-pointer">Press</li>
+              <li class="cursor-pointer">Affilates</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h1 class="text-primary text-4xl">More</h1>
+            <ul
+              class="flex flex-col gap-3 items-center text-secondary text-xl md:text-lg md:items-start"
+            >
+              <li class="cursor-pointer">Airlinefees</li>
+              <li class="cursor-pointer">Airline</li>
+              <li class="cursor-pointer">Low fare tips</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Part -3 -->
+        <div>
+          <div class="flex justify-center md:justify-start gap-4">
+            <div
+              class="bg-offWhite w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+            >
+              <img src="./images/Facebook Icon.svg" alt="" />
+            </div>
+            <div
+              class="bg-offWhite w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+            >
+              <img src="./images/instagram-log.svg" alt="" />
+            </div>
+            <div
+              class="bg-offWhite w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+            >
+              <img src="./images/twitter.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center md:items-start justify-center mt-4 gap-3"
+          >
+            <h2 class="text-secondary text-lg">Discover Our App</h2>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div
+                class="bg-black flex items-center justify-center px-3 py-1 rounded-xl gap-3 cursor-pointer"
+              >
+                <img src="./images/google-play 1.svg" alt="" />
+                <div class="flex flex-col justify-center text-white">
+                  <span class="text-xs font-bold"> Get it on </span>
+                  <p class="text-sm">Google Play</p>
+                </div>
+              </div>
+              <div
+                class="bg-black flex items-center justify-center px-3 py-1 rounded-xl gap-3 cursor-pointer"
+              >
+                <img src="./images/apple.svg" alt="" />
+                <div class="flex flex-col justify-center text-white">
+                  <span class="text-xs font-bold"> Available on the </span>
+                  <p class="text-sm">Apple Store</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

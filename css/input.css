@@ -31,3 +31,13 @@
 .card-body {
   width: 12rem;
 }
+.newletter_bordertop {
+  border-top-left-radius: 90px;
+  margin: 0 40px;
+}
+
+@media (min-width: 768px) {
+  .newletter_bordertop {
+    border-top-left-radius: 150px;
+  }
+}
